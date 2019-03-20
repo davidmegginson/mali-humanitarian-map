@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Mali humanitarian-indicators map</title>
-    <link rel="stylesheet" href="hxlmaps/hxlmaps.css"/>
+    <link rel="stylesheet" href="lib/hxlmaps/hxlmaps.css"/>
     <link rel="stylesheet" href="lib/leaflet/leaflet.css"/>
     <link rel="stylesheet" href="lib/leaflet.markercluster/MarkerCluster.css"/>
     <link rel="stylesheet"
@@ -16,7 +16,7 @@
     <header>
       <h1>Mali humanitarian indicators</h1>
     </header>
-    <aside>
+    <aside id="layers">
       <section>
         <h2>Base layer</h2>
         <form>
@@ -38,31 +38,31 @@
         <h2>Shaded layer</h2>
         <form>
           <label>
-            <input type="radio" name="shading" value=""/>
+            <input type="radio" name="shaded" value=""/>
             <span>None</span>
           </label>
           <label>
-            <input type="radio" name="shading" value="ch"/>
+            <input type="radio" name="shaded" value="ch"/>
             <span>Cadre harmonisée (IPC)</span>
           </label>
           <label>
-            <input type="radio" name="shading" value="smart"/>
+            <input type="radio" name="shaded" value="smart"/>
             <span>SMART</span>
           </label>
           <label>
-            <input type="radio" name="shading" value="dtm"/>
+            <input type="radio" name="shaded" value="dtm"/>
             <span>IDP households (DTM)</span>
           </label>
           <label>
-            <input type="radio" name="shading" value="acf"/>
+            <input type="radio" name="shaded" value="acf"/>
             <span>Biomass (ACF)</span>
           </label>
           <label>
-            <input type="radio" name="shading" value="inform"/>
+            <input type="radio" name="shaded" value="inform"/>
             <span>Risk level (INFORM)</span>
           </label>
           <label>
-            <input type="radio" name="shading" value="acf"/>
+            <input type="radio" name="shaded" value="3w"/>
             <span>3W activities (UNOCHA)</span>
           </label>
         </form>
@@ -75,7 +75,7 @@
             <span>None</span>
           </label>
           <label>
-            <input type="radio" name="heat" value="acled"/>
+            <input type="radio" name="heat" value="acled-heat"/>
             <span>Incidents (ACLED)</span>
           </label>
         </form>
@@ -88,7 +88,7 @@
             <span>None</span>
           </label>
           <label>
-            <input type="radio" name="point" value="acled"/>
+            <input type="radio" name="point" value="acled-points"/>
             <span>Incidents (ACLED)</span>
           </label>
         </form>
