@@ -32,12 +32,14 @@ mali_map.config = {
             id: "acf",
             group: "shaded",
             name: "ACF biomass",
-            url: "https://proxy.hxlstandard.org/data/9baa65.csv",
-            unit: "biomass",
+            url: "https://proxy.hxlstandard.org/data/ef1443.csv",
+            unit: "% deviation",
             hashtag: "#indicator+deviation_from_mean",
+            colorMapType: "absolute",
             colorMap: [
-                [0.0, '#964B00'],
-                [1.0, '#00FF00']
+                [0, '#FF0000'],
+                [100, '#FFFFFF'],
+                [200, '#00FF00']
             ]
         },
         {
