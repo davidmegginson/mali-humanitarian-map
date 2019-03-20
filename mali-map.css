@@ -1,6 +1,7 @@
 body {
     padding: 0;
     font-family: Helvetica, Arial, sanserif;
+    font-size: 10pt;
 }
 
 header {
@@ -8,8 +9,13 @@ header {
     top: 0;
     left: 0;
     width: 20vw;
-    height: 10vh;
-    padding: 1ex;
+    height: 5vh;
+    padding: 0 1ex;
+}
+
+header h1 {
+    font-size: 144%;
+    font-weight: bold;
 }
 
 main {
@@ -26,9 +32,17 @@ main {
 
 aside {
     position: absolute;
-    top: 10vh;
+    top: 5vh;
     width: 20vw;
     padding: 1ex;
+    height: 100vh;
+    overflow: auto;
+}
+
+aside h2 {
+    font-size: 120%;
+    font-weight: normal;
+    margin: 2ex 0 1ex;
 }
 
 aside form label {

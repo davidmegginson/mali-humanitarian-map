@@ -20,7 +20,9 @@ mali_map.config = {
             group: "shaded",
             name: "Cadre harmonisé",
             url: "https://proxy.hxlstandard.org/data/eb10c3.csv",
-            unit: "% at risk",
+            unit: "% IPC phase 3-5",
+            suffix: "%",
+            legend: "Population in IPC phase 3-5, by cercle (latest)",
             hashtag: "#indicator+nutrition+at_risk+pct",
             colorMap: [
                 [0.0, '#00ff00'],
@@ -29,30 +31,40 @@ mali_map.config = {
             ]
         },
         {
-            id: "acf",
+            id: "dtm",
             group: "shaded",
-            name: "ACF biomass",
-            url: "https://proxy.hxlstandard.org/data/ef1443.csv",
-            unit: "% deviation",
-            hashtag: "#indicator+deviation_from_mean",
-            colorMapType: "absolute",
+            name: "IDPs",
+            url: "https://proxy.hxlstandard.org/data/d73763/download/mli-dtm-baseline-assessment-topline.csv",
+            unit: "IDPs",
+            legend: "IDPs surveyed, by cercle (latest)",
+            hashtag: "#affected+idps+ind",
             colorMap: [
-                [0, '#FF0000'],
-                [100, '#FFFFFF'],
-                [200, '#00FF00']
+                [0.0, '#00FF00'],
+                [0.5, '#FFFF00'],
+                [1.0, '#FF0000']
             ]
         },
         {
-            id: "3w",
+            id: "acf",
             group: "shaded",
-            name: "Mali 3W",
-            url: "https://data.humdata.org/dataset/d7ab89e4-bcb2-4127-be3c-5e8cf804ffd3/resource/b8f708da-e596-456c-b550-f88959970d21/download/mali_3wop_decembre-2017.xls",
-            unit: "3W activities"
+            name: "ACF biomass",
+            url: "https://proxy.hxlstandard.org/data/ef1443/download/acf-biomass.csv",
+            unit: "% of 20-year mean biomass",
+            legend: "% of 20-year mean biomass, by cercle (2018)",
+            suffix: "%",
+            hashtag: "#indicator+from_mean",
+            colorMapType: "absolute",
+            colorMap: [
+                [80, '#FF0000'],
+                [100, '#FFFFFF'],
+                [120, '#00FF00']
+            ]
         },
         {
             id: "acled-heat",
             group: "heat",
             name: "ACLED conflict heat map",
+            legend: "Security incidents since January 2018",
             url: "https://data.humdata.org/dataset/acled-data-for-mali",
             unit: "incidents",
             style: "heat"
@@ -60,6 +72,7 @@ mali_map.config = {
         {
             id: "acled-points",
             group: "points",
+            legend: "Security incidents since January 2018",
             name: "ACLED conflict heat map",
             url: "https://data.humdata.org/dataset/acled-data-for-mali",
             unit: "incidents",
