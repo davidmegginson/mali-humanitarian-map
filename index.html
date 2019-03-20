@@ -14,10 +14,77 @@
   </head>
   <body>
     <header>
-      <h1>Mali humanitarian-indicators map</h1>
+      <h1>Mali humanitarian indicators</h1>
     </header>
     <aside>
-      <h2>Map layers</h2>
+      <section>
+        <h2>Base layer</h2>
+        <form>
+          <label>
+            <input type="radio" name="base" value=""/>
+            <span>None</span>
+          </label>
+          <label>
+            <input type="radio" name="base" value="osm"/>
+            <span>OpenStreetMap</span>
+          </label>
+          <label>
+            <input type="radio" name="base" value="cods"/>
+            <span>Commune boundaries (UNOCHA)</span>
+          </label>
+        </form>
+      </section>
+      <section>
+        <h2>Shaded layer</h2>
+        <form>
+          <label>
+            <input type="radio" name="shading" value=""/>
+            <span>None</span>
+          </label>
+          <label>
+            <input type="radio" name="shading" value="ch"/>
+            <span>Cadre harmonisée (IPC)</span>
+          </label>
+          <label>
+            <input type="radio" name="shading" value="acf"/>
+            <span>Biomass (ACF)</span>
+          </label>
+          <label>
+            <input type="radio" name="shading" value="inform"/>
+            <span>Risk level (INFORM)</span>
+          </label>
+          <label>
+            <input type="radio" name="shading" value="acf"/>
+            <span>3W activities (UNOCHA)</span>
+          </label>
+        </form>
+      </section>
+      <section>
+        <h2>Heat layer</h2>
+        <form>
+          <label>
+            <input type="radio" name="heat" value=""/>
+            <span>None</span>
+          </label>
+          <label>
+            <input type="radio" name="heat" value="acled"/>
+            <span>Incidents (ACLED)</span>
+          </label>
+        </form>
+      </section>
+      <section>
+        <h2>Point layers</h2>
+        <form>
+          <label>
+            <input type="radio" name="point" value=""/>
+            <span>None</span>
+          </label>
+          <label>
+            <input type="radio" name="point" value="acled"/>
+            <span>Incidents (ACLED)</span>
+          </label>
+        </form>
+      </section>
     </aside>
     <main>
       <div id="map">Map loading...</div>

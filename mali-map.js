@@ -9,7 +9,7 @@ mali_map.config = {
     codLayers: [
         {
             country: "MLI",
-            level: "#adm1"
+            level: "#adm3"
         }
     ],
     layers: [
