@@ -34,7 +34,7 @@ main {
 }
 
 #map {
-    width: 79vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -62,7 +62,42 @@ aside form label {
     display: block;
 }
 
-@media screen and (max-device-width: 100em) {
+@media screen and (max-width: 60em) {
+
+    header {
+	width: 30vw;
+    }
+    
+    main {
+	left: 30vw;
+	width: 70vw;
+    }
+
+    aside {
+	width: 30vw;
+    }
+    
+}
+
+@media screen and (max-width: 50em) {
+
+    header {
+	width: 40vw;
+    }
+    
+    main {
+	left: 40vw;
+	width: 60vw;
+    }
+
+    aside {
+	width: 40vw;
+    }
+    
+}
+
+@media screen and (max-width: 40em) {
+    
     header {
         position: absolute;
         top: 0;
@@ -93,7 +128,6 @@ aside form label {
 
     #map {
         height: 95vh;
-        width: 100vw;
     }
 
     aside {
