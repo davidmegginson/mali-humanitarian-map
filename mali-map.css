@@ -2,6 +2,7 @@ body {
     padding: 0;
     font-family: Helvetica, Arial, sanserif;
     font-size: 10pt;
+    color: #001c00;
 }
 
 header {
@@ -9,42 +10,107 @@ header {
     top: 0;
     left: 0;
     width: 20vw;
-    height: 5vh;
-    padding: 0 1ex;
+    height: 2vh;
+    padding: 1ex;
 }
 
 header h1 {
-    font-size: 144%;
+    font-size: 120%;
     font-weight: bold;
+    margin: 0;
+}
+
+.jump-link {
+    display: none;
 }
 
 main {
     position: absolute;
     top: 0;
     left: 20vw;
-    width: 80vw;
+    width: 79vw;
+    padding: 0;
+    margin: 0;
 }
 
 #map {
-    width: 100%;
+    width: 79vw;
     height: 100vh;
 }
 
 aside {
     position: absolute;
-    top: 5vh;
+    top: 2vh;
     width: 20vw;
     padding: 1ex;
-    height: 100vh;
+    height: auto;
     overflow: auto;
+    margin: 0;
 }
 
-aside h2 {
-    font-size: 120%;
-    font-weight: normal;
+aside>h2 {
+    display: none;
+}
+
+aside h3 {
+    font-size: 100%;
+    font-weight: bold;
     margin: 2ex 0 1ex;
 }
 
 aside form label {
     display: block;
+}
+
+@media screen and (max-device-width: 100em) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5vh;
+        width: 100vw;
+        padding: 1ex;
+    }
+
+    header h1 {
+        float: left;
+    }
+
+    .jump-link {
+        display: block;
+        text-align: right;
+        height: 4vh;
+        padding-right: 2em; /* fixme - why does it need this? */
+    }
+
+    main {
+        position: absolute;
+        top: 5vh;
+        left: 0;
+        height: 95vh;
+        width: 100vw;
+    }
+
+    #map {
+        height: 95vh;
+        width: 100vw;
+    }
+
+    aside {
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        padding: 3ex 1ex;
+        height: 100vh;
+        width: 100vw;
+        overflow: none;
+    }
+
+    aside>h2 {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
 }
