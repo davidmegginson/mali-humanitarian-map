@@ -16,6 +16,21 @@ mali_map.config = {
     ],
     layers: [
         {
+            id: "hrp",
+            group: "shaded",
+            name: "Mali 2019 HRP",
+            url: "https://data.humdata.org/dataset/mali-humanitarian-response-plan",
+            unit: "people",
+            suffix: "",
+            legend: "People targeted for humanitarian assistance, by cercle (2019)",
+            hashtag: "#targeted",
+            colorMap: [
+                [0.0, '#00ff00'],
+                [0.5, '#ffff00'],
+                [1.0, '#ff0000']
+            ]
+        },
+        {
             id: "ch",
             group: "shaded",
             name: "Cadre harmonisé",
