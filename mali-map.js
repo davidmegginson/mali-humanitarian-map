@@ -46,6 +46,36 @@ mali_map.config = {
             ]
         },
         {
+            id: "mam",
+            group: "shaded",
+            name: "Moderate Acute Malnutrition (MAM)",
+            url: "https://proxy.hxlstandard.org/data/efd37a.csv",
+            suffix: "%",
+            legend: "% ",
+            hashtag: "#indicator+mam+all",
+            colorMapType: "absolute",
+            colorMap: [
+                [0, '#00ff00'],
+                [7.5, '#ffff00'],
+                [15, '#ff0000']
+            ]
+        },
+        {
+            id: "sam",
+            group: "shaded",
+            name: "Severe Acute Malnutrition (MAM)",
+            url: "https://proxy.hxlstandard.org/data/efd37a.csv",
+            suffix: "%",
+            legend: "% ",
+            hashtag: "#indicator+sam+all",
+            colorMapType: "absolute",
+            colorMap: [
+                [0, '#00ff00'],
+                [2.5, '#ffff00'],
+                [5, '#ff0000']
+            ]
+        },
+        {
             id: "dtm",
             group: "shaded",
             name: "IDPs",
@@ -73,6 +103,19 @@ mali_map.config = {
                 [80, '#FF0000'],
                 [100, '#FFFFFF'],
                 [120, '#00FF00']
+            ]
+        },
+        {
+            id: "inform",
+            group: "shaded",
+            name: "INFORM risk model for the Sahel",
+            legend: "",
+            url: "https://data.humdata.org/dataset/acled-data-for-mali",
+            unit: "",
+            colorMap: [
+                [0.0, '#00FF00'],
+                [0.5, '#FFFF00'],
+                [1.0, '#FF0000']
             ]
         },
         {
