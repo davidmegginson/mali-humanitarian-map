@@ -107,16 +107,45 @@ mali_map.config = {
             ]
         },
         {
-            id: "inform",
+            id: "inform-flood",
             group: "shaded",
             name: "INFORM risk model for the Sahel",
             legend: "",
-            url: "https://data.humdata.org/dataset/acled-data-for-mali",
+            url: "https://proxy.hxlstandard.org/data.csv?filter01=select&select-query01-01=indicator%2Bname%3Dphysical+exposure+to+flood&url=https%3A%2F%2Fproxy.hxlstandard.org%2Fdata%2F757e5f.csv",
             unit: "",
+            colorMapType: "absolute",
             colorMap: [
                 [0.0, '#00FF00'],
-                [0.5, '#FFFF00'],
-                [1.0, '#FF0000']
+                [5.0, '#FFFF00'],
+                [10.0, '#FF0000']
+            ]
+        },
+        {
+            id: "inform-drought",
+            group: "shaded",
+            name: "INFORM risk model for the Sahel",
+            legend: "",
+            url: "https://proxy.hxlstandard.org/data.csv?filter01=select&select-query01-01=indicator%2Bname%3Ddroughts+probability+and+historical+impact&url=https%3A%2F%2Fproxy.hxlstandard.org%2Fdata%2F757e5f.csv",
+            unit: "",
+            colorMapType: "absolute",
+            colorMap: [
+                [0.0, '#00FF00'],
+                [5.0, '#FFFF00'],
+                [10.0, '#FF0000']
+            ]
+        },
+        {
+            id: "inform-natural",
+            group: "shaded",
+            name: "INFORM risk model for the Sahel",
+            legend: "",
+            url: "https://proxy.hxlstandard.org/data.csv?filter01=select&select-query01-01=indicator%2Bname%3Dnatural&url=https%3A%2F%2Fproxy.hxlstandard.org%2Fdata%2F757e5f.csv",
+            unit: "",
+            colorMapType: "absolute",
+            colorMap: [
+                [0.0, '#00FF00'],
+                [5.0, '#FFFF00'],
+                [10.0, '#FF0000']
             ]
         },
         {
