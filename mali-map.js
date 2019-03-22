@@ -39,10 +39,11 @@ mali_map.config = {
             suffix: "%",
             legend: "Population in IPC phase 3-5, by cercle (latest)",
             hashtag: "#indicator+nutrition+at_risk+pct",
+            colorMapType: "absolute",
             colorMap: [
                 [0.0, '#00ff00'],
-                [0.5, '#ffff00'],
-                [1.0, '#ff0000']
+                [12.5, '#ffff00'],
+                [25, '#ff0000']
             ]
         },
         {
@@ -51,7 +52,7 @@ mali_map.config = {
             name: "Moderate Acute Malnutrition (MAM)",
             url: "https://proxy.hxlstandard.org/data/efd37a.csv",
             suffix: "%",
-            legend: "% ",
+            legend: "% of population with moderate acute malnutrition (2018-09)",
             hashtag: "#indicator+mam+all",
             colorMapType: "absolute",
             colorMap: [
@@ -66,7 +67,7 @@ mali_map.config = {
             name: "Severe Acute Malnutrition (MAM)",
             url: "https://proxy.hxlstandard.org/data/efd37a.csv",
             suffix: "%",
-            legend: "% ",
+            legend: "% of population with severe acute malnutrition (2018-09)",
             hashtag: "#indicator+sam+all",
             colorMapType: "absolute",
             colorMap: [
