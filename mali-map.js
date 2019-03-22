@@ -6,14 +6,14 @@ var mali_map = {
 // Map configuration
 mali_map.config = {
     title: "Mali conficts and 3W",
-    codLayers: [
-        {
-            id: "cods",
-            group: "base",
-            country: "MLI",
-            level: "#adm2"
-        }
-    ],
+   codLayers: [
+       {
+           id: "cods",
+           group: "base",
+           country: "MLI",
+           level: "#country"
+       }
+   ],
     layers: [
         {
             id: "hrp",
@@ -142,14 +142,22 @@ mali_map.config = {
 
 // Activate a layer (and deactivate others in the same group)
 mali_map.activateLayer = function(group, id) {
-    var groupLayers = mali_map.map.getGroupLayers(group);
-    groupLayers.forEach((layer) => {
-        if (layer.config.id == id) {
-            layer.show();
+    if (group == "tiles") {
+        if (id == "osm") {
+            mali_map.map.showOSM();
         } else {
-            layer.hide();
+            mali_map.map.hideOSM();
         }
-    });
+    } else {
+        var groupLayers = mali_map.map.getGroupLayers(group);
+        groupLayers.forEach((layer) => {
+            if (layer.config.id == id) {
+                layer.show();
+            } else {
+                layer.hide();
+            }
+        });
+    }
 };
 
 // Set up the map
