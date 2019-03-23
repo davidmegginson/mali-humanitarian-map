@@ -97,9 +97,9 @@ mali_map.config = {
             hashtag: "#indicator+from_mean",
             colorMapType: "absolute",
             colorMap: [
-                [80, '#FF0000'],
+                [50, '#FF0000'],
                 [100, '#FFFFFF'],
-                [120, '#00FF00']
+                [200, '#00FF00']
             ]
         },
         {
