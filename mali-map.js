@@ -24,10 +24,10 @@ mali_map.config = {
             suffix: "",
             legend: "People targeted for humanitarian assistance, by cercle (2019)",
             hashtag: "#targeted",
+	    colorMapType: "absolute",
             colorMap: [
-                [0.0, '#00ff00'],
-                [0.5, '#ffff00'],
-                [1.0, '#ff0000']
+                [0.0, '#ffffff'],
+                [250000, '#ff0000']
             ]
         },
         {
@@ -41,8 +41,7 @@ mali_map.config = {
             hashtag: "#indicator+nutrition+at_risk+pct",
             colorMapType: "absolute",
             colorMap: [
-                [0.0, '#00ff00'],
-                [12.5, '#ffff00'],
+                [0.0, '#ffffff'],
                 [25, '#ff0000']
             ]
         },
@@ -52,12 +51,11 @@ mali_map.config = {
             name: "Moderate Acute Malnutrition (MAM)",
             url: "https://proxy.hxlstandard.org/data/efd37a.csv",
             suffix: "%",
-            legend: "% of population with moderate acute malnutrition (2018-09)",
+            legend: "% moderate acute malnutrition, by region (Sept 2018)",
             hashtag: "#indicator+mam+all",
             colorMapType: "absolute",
             colorMap: [
-                [0, '#00ff00'],
-                [7.5, '#ffff00'],
+                [0, '#ffffff'],
                 [15, '#ff0000']
             ]
         },
@@ -67,12 +65,11 @@ mali_map.config = {
             name: "Severe Acute Malnutrition (MAM)",
             url: "https://proxy.hxlstandard.org/data/efd37a.csv",
             suffix: "%",
-            legend: "% of population with severe acute malnutrition (2018-09)",
+            legend: "% severe acute malnutrition, by region (Sept 2018)",
             hashtag: "#indicator+sam+all",
             colorMapType: "absolute",
             colorMap: [
-                [0, '#00ff00'],
-                [2.5, '#ffff00'],
+                [0, '#ffffff'],
                 [5, '#ff0000']
             ]
         },
@@ -85,8 +82,7 @@ mali_map.config = {
             legend: "IDPs surveyed, by cercle (latest)",
             hashtag: "#affected+idps+ind",
             colorMap: [
-                [0.0, '#00FF00'],
-                [0.5, '#FFFF00'],
+                [0.0, '#FFFFFF'],
                 [1.0, '#FF0000']
             ]
         },
@@ -110,13 +106,12 @@ mali_map.config = {
             id: "inform-flood",
             group: "shaded",
             name: "INFORM risk model for the Sahel",
-            legend: "",
+            legend: "INFORM flood vulnerability score",
             url: "https://proxy.hxlstandard.org/data.csv?filter01=select&select-query01-01=indicator%2Bname%3Dphysical+exposure+to+flood&url=https%3A%2F%2Fproxy.hxlstandard.org%2Fdata%2F757e5f.csv",
-            unit: "",
+            unit: "/ 10",
             colorMapType: "absolute",
             colorMap: [
-                [0.0, '#00FF00'],
-                [5.0, '#FFFF00'],
+                [0.0, '#FFFFFF'],
                 [10.0, '#FF0000']
             ]
         },
@@ -124,27 +119,12 @@ mali_map.config = {
             id: "inform-drought",
             group: "shaded",
             name: "INFORM risk model for the Sahel",
-            legend: "",
+            legend: "INFORM drought vulnerability score",
             url: "https://proxy.hxlstandard.org/data.csv?filter01=select&select-query01-01=indicator%2Bname%3Ddroughts+probability+and+historical+impact&url=https%3A%2F%2Fproxy.hxlstandard.org%2Fdata%2F757e5f.csv",
-            unit: "",
+            unit: "/ 10",
             colorMapType: "absolute",
             colorMap: [
-                [0.0, '#00FF00'],
-                [5.0, '#FFFF00'],
-                [10.0, '#FF0000']
-            ]
-        },
-        {
-            id: "inform-natural",
-            group: "shaded",
-            name: "INFORM risk model for the Sahel",
-            legend: "",
-            url: "https://proxy.hxlstandard.org/data.csv?filter01=select&select-query01-01=indicator%2Bname%3Dnatural&url=https%3A%2F%2Fproxy.hxlstandard.org%2Fdata%2F757e5f.csv",
-            unit: "",
-            colorMapType: "absolute",
-            colorMap: [
-                [0.0, '#00FF00'],
-                [5.0, '#FFFF00'],
+                [0.0, '#FFFFFF'],
                 [10.0, '#FF0000']
             ]
         },
