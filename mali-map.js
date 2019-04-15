@@ -144,6 +144,7 @@ mali_map.config = {
             name: "ACLED conflict heat map",
             url: "https://data.humdata.org/dataset/acled-data-for-mali",
             unit: "incidents",
+            excludePatterns: ["#meta+source"],
             style: "cluster"
         },
     ]
